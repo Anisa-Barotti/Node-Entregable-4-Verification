@@ -1,3 +1,5 @@
 const EmailCode = require("./EmailCode");
+const User = require("./User");
 
-EmailCode
+User.hasOne (EmailCode);
+EmailCode.belongsTo(User);
